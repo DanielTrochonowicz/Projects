@@ -1,0 +1,13 @@
+
+[
+squid:S106"9Replace this use of System.out or System.err by a logger.(†ºá‰ùÿÿÿÿ8»ú·ı¢-
+[
+squid:S106#"9Replace this use of System.out or System.err by a logger.(Ôã™øÿÿÿÿ8Îš´‡£-
+[
+squid:S106""9Replace this use of System.out or System.err by a logger.(ÊÀäÕúÿÿÿÿ8íÅ´‡£-
+V
+squid:S106!"9Replace this use of System.out or System.err by a logger.(¬ ˆ‘8®İ’‡£-
+qsquid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(‹¨ËB
+^squid:UselessImportCheck".Remove this unused import 'java.util.Scanner'.(ÒÜÅ¸úÿÿÿÿ8ÆÖŠˆ£-
+[
+squid:S106 "9Replace this use of System.out or System.err by a logger.(ÊÀäÕúÿÿÿÿ8®İ’‡£-
