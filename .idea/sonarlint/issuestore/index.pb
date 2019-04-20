@@ -33,5 +33,3 @@ D
 src/Factory/Suv.java,0\f\0ff27f270dedc0866112daac60a5efa19e67426f
 F
 src/Factory/Truck.java,3\d\3d9abf8a91c6a8b03a2734586088e479273ead27
-H
-src/Factory/Factorz.java,0\3\03cab18f36c50ab8db777bad638174defdb3c2af
