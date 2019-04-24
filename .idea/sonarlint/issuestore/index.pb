@@ -47,3 +47,5 @@ V
 &src/SavedFile/PdfFileSaveStrategy.java,3\9\39923eae665f36b366cd53d05f59d70ef6a5aca3
 V
 &src/SavedFile/TxtFileSaveStrategy.java,2\f\2fe3ae338f2ff1ff8fe6139373c5fac3f18fb43f
+B
+src/Game/Game.java,9\f\9f9aea197abea0b5bf5a34c11237534595e1be36
