@@ -5,6 +5,7 @@ public class MainIdentityCard {
     public static void main(String[] args) {
 
         PersonalData osoba = new PersonalData
+
                 .PersonalDataBuild("Daniel", "Kowalski")
                 .setDay(18)
                 .setMonth("Lipiec")
@@ -17,4 +18,5 @@ public class MainIdentityCard {
         System.out.println(osoba.toString());
     }
 }
+
 

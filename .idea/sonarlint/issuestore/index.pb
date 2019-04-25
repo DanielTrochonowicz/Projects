@@ -49,3 +49,7 @@ V
 &src/SavedFile/TxtFileSaveStrategy.java,2\f\2fe3ae338f2ff1ff8fe6139373c5fac3f18fb43f
 B
 src/Game/Game.java,9\f\9f9aea197abea0b5bf5a34c11237534595e1be36
+V
+&src/IdentityCard/MainIdentityCard.java,9\2\9232931260eff2e0626e7c94d8633d8ee8b23d8a
+R
+"src/KontoBankowe/KontoBankowe.java,0\8\0843255c9f167c5006520758d268dcb99a4fbb34
