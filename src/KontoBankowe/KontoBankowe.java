@@ -15,10 +15,12 @@ public class KontoBankowe {
 
 class  Konto{
 
+    private  int saldo;
+
     public Konto(){
         saldo = 1000;
     }
-    private  int saldo;
+
 
 
     int getSaldo(){

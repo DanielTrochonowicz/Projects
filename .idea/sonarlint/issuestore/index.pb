@@ -1,8 +1,6 @@
 
 M
 src/Computer/Application.java,c\1\c1eb3894b10417bba772f41b882e72546c4a19cf
-8
-Shop.iml,a\3\a30a7ec51f03544c8ae0bd4b66fd105689852e72
 J
 src/Computer/Computer.java,5\b\5bfbb959b6fbf6ed8768fbed7ae175349a78f888
 I
@@ -53,3 +51,5 @@ V
 &src/IdentityCard/MainIdentityCard.java,9\2\9232931260eff2e0626e7c94d8633d8ee8b23d8a
 R
 "src/KontoBankowe/KontoBankowe.java,0\8\0843255c9f167c5006520758d268dcb99a4fbb34
+<
+Projects.iml,2\7\2783810cdaba805523472f33306bc6eae9d53b14
