@@ -2,7 +2,7 @@ package FabrykaCzesci;
 
 public class SkrzyniaBiegówDoAutOsobowych implements SkrzyniaBiegów {
 
-    String name = "Skrzynia Biegów Do Aut Osobowych";
+    String name = "Skrzynia Biegów Do Aut Osobowych.";
 
     @Override
     public SkrzyniaBiegów wydajSkrzyniaBiegów(){

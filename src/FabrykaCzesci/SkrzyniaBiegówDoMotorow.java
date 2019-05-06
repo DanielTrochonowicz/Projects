@@ -2,7 +2,7 @@ package FabrykaCzesci;
 
 public class SkrzyniaBiegówDoMotorow implements SkrzyniaBiegów {
 
-    String name = "Skrzynia Biegów Do Motorow";
+    String name = "Skrzynia Biegów Do Motorow.";
 
     public SkrzyniaBiegów wydajSkrzyniaBiegów(){
         System.out.println("Cześć wysłana do produkcji: " + name);

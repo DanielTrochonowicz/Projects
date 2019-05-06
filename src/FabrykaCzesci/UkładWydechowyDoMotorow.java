@@ -2,7 +2,7 @@ package FabrykaCzesci;
 
 public class UkładWydechowyDoMotorow implements UkładWydechowy {
 
-    String name = "Układ Wydechowy Do Motorow";
+    String name = "Układ Wydechowy Do Motorow.";
 
     public UkładWydechowy wydajUkładWydechowy(){
         System.out.println("Cześć wysłana do produkcji: " + name);
