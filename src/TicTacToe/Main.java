@@ -26,6 +26,7 @@ public class Main extends JFrame implements ActionListener {
     }
 
     private int counter;
+
     @Override
     public void actionPerformed(ActionEvent e) {
         JButton button = (JButton)e.getSource(); //rzutowanie na Jbutton Polimorfizm

@@ -1,21 +1,21 @@
 
-rsquid:S00116]"SRename this field "Keybyord" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(à¯¯»8÷¾šı¢-
-tsquid:S00116"PRename this field "Drive" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ø€¤Êúÿÿÿÿ8è‰×ı¢-
-osquid:S00116^"PRename this field "Mouse" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(íìª—8øåı¢-
-psquid:S00117f"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÊšÉ•8å§ı¢-
-psquid:S00117f"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÊšÉ•8¼ Óı¢-
-rsquid:S00116"NRename this field "RAM" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ºó§ãúÿÿÿÿ8’›İü¢-
-tsquid:S00116\"PRename this field "Drive" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ø€¤Êúÿÿÿÿ8ãÙÒı¢-
-lsquid:S00116Y"NRename this field "HDD" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‘˜ú%8øåı¢-
 rsquid:S00116Z"NRename this field "RAM" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ºó§ãúÿÿÿÿ8øåı¢-
 qsquid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(‹¨ËB
-usquid:S00117g"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‡©éœüÿÿÿÿ8ı´Óı¢-
+tsquid:S00116\"PRename this field "Drive" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ø€¤Êúÿÿÿÿ8ãÙÒı¢-
+psquid:S00117f"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÊšÉ•8¼ Óı¢-
+wsquid:S00116"SRename this field "Procesor" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(èÌÛûÿÿÿÿ8è‰×ı¢-
 lsquid:S00116"NRename this field "HDD" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‘˜ú%8’›İü¢-
+rsquid:S00116"NRename this field "RAM" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ºó§ãúÿÿÿÿ8’›İü¢-
+psquid:S00117f"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÊšÉ•8å§ı¢-
+rsquid:S00116	"SRename this field "Keybyord" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(à¯¯»8Ò­ùü¢-
+psquid:S00117f"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÊšÉ•8å§ı¢-
+lsquid:S00116Y"NRename this field "HDD" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‘˜ú%8øåı¢-
 osquid:S00116
 "PRename this field "Mouse" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(íìª—8Ò­ùü¢-
 wsquid:S00116["SRename this field "Procesor" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(èÌÛûÿÿÿÿ8ãÙÒı¢-
-psquid:S00117f"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÊšÉ•8å§ı¢-
-usquid:S00117g"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‡©éœüÿÿÿÿ8…áÔı¢-
 usquid:S00117g"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‡©éœüÿÿÿÿ8‹ÎÔı¢-
-wsquid:S00116"SRename this field "Procesor" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(èÌÛûÿÿÿÿ8è‰×ı¢-
-rsquid:S00116	"SRename this field "Keybyord" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(à¯¯»8Ò­ùü¢-
+usquid:S00117g"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‡©éœüÿÿÿÿ8…áÔı¢-
+rsquid:S00116]"SRename this field "Keybyord" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(à¯¯»8÷¾šı¢-
+usquid:S00117g"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‡©éœüÿÿÿÿ8ı´Óı¢-
+osquid:S00116^"PRename this field "Mouse" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(íìª—8øåı¢-
+tsquid:S00116"PRename this field "Drive" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ø€¤Êúÿÿÿÿ8è‰×ı¢-
