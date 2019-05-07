@@ -21,7 +21,7 @@ public class BmiCalculator {
         bmi = bmi;
         bmi *= 100000; // bmi = bmi * 100;
         bmi = Math.round(bmi);
-        bmi /= 100000; // bmi = bmi / 100;
+        bmi /= 100000;// bmi = bmi / 100;
         System.out.println("Your bmi is: " + bmi);
 
         if (bmi < 16.00) {
