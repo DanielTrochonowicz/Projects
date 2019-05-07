@@ -28,9 +28,7 @@ public class FabrykaCzesciMotorow implements FabrykaCześćiSamochodowychIMotoro
     }
 
     @Override
-    public Klimatyzacja produkujKlimatyzacje() {
-        return null;
-    }
+    public Klimatyzacja produkujKlimatyzacje() { return null; }
 
     @Override
     public RamaZawieszenia produkujRameZawieszenia() {

@@ -49,8 +49,6 @@ B
 src/Game/Game.java,9\f\9f9aea197abea0b5bf5a34c11237534595e1be36
 V
 &src/IdentityCard/MainIdentityCard.java,9\2\9232931260eff2e0626e7c94d8633d8ee8b23d8a
-R
-"src/KontoBankowe/KontoBankowe.java,0\8\0843255c9f167c5006520758d268dcb99a4fbb34
 <
 Projects.iml,2\7\2783810cdaba805523472f33306bc6eae9d53b14
 G
@@ -179,9 +177,19 @@ b
 2src/FabrykaCzesci/FabrykaRealizacjaZamowienia.java,1\e\1eb3da88f0178f51c583165acad91875f5f1fc26
 N
 src/FabrykaCzesci/Cześć.java,0\1\01a62b6d57c0e8a431bfde5c59eb839679b572f9
-[
-+src/FabrykaCzesci/ListaCześćiFabryki.java,c\6\c6080a41861c0dc906a8ecb6302884f54387e01d
 M
 src/FabrykaCzesci/Silnik.java,3\d\3d9a56560d8c318a571cb697c15efdf2574969bc
 Y
 )src/FabrykaCzesci/CześćiCieżarowe.java,e\f\ef466b009f6eccc89d846d5ea69ef1b121960257
+P
+ src/AccountBank/AccountBank.java,c\6\c6fdbf9155e4970423ec3e96484efe9dc3e3dbb8
+W
+'src/FabrykaCzesci/CześćiMotorowe.java,f\5\f5f46e5279869a0d0e22b31bf9cbb1ef8e7bc936
+V
+&src/FabrykaCzesci/CześćiOsobowe.java,7\f\7fd475afaab96a6f5cc643bf7bfa39d23d8ae8f3
+W
+'src/FabrykaCzesci/CześćiTerenowe.java,7\8\7806f9e4f5272a2a56abf346ec928918ab4ef351
+k
+;src/FabrykaCzesci/FabrykaCześćiSamochodowychIMotorow.java,a\a\aa69c98fcd286bbcdd8ae8cfb27f11e7e66fda01
+W
+'src/FabrykaCzesci/AplikacjaFabryka.java,d\c\dc04771d2b0cc65b0b7cef8eed1454a61674a51a
