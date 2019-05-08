@@ -193,3 +193,33 @@ k
 ;src/FabrykaCzesci/FabrykaCześćiSamochodowychIMotorow.java,a\a\aa69c98fcd286bbcdd8ae8cfb27f11e7e66fda01
 W
 'src/FabrykaCzesci/AplikacjaFabryka.java,d\c\dc04771d2b0cc65b0b7cef8eed1454a61674a51a
+T
+$src/BmiCalculator/BmiCalculator.java,1\6\16de484288067c3e03c8e11826d9a6d98793e2aa
+O
+src/Holiday/HolidayPackage.java,9\5\95b49f3f41d5268c07446c119914d110e56a4109
+V
+&src/Holiday/HolidayPackageAverage.java,a\d\ada0f5079b830378caa664a3b511c770e568279c
+V
+&src/Holiday/HolidayPackageMaximum.java,3\2\32d7d857db293503a167b9b0323c5fd5b2b65be2
+W
+'src/Holiday/HolidayPackageStandard.java,c\0\c037cbdae88f997f0a7d231d8b76f8b794f391ce
+O
+src/Holiday/HolidayProgram.java,6\b\6bea7a23346861f9ac700335a4b675c17206dd2a
+f
+6src/Holiday/HolidayProgramEveningOutingAtTheParty.java,8\b\8bee691fd7504f0e07a8f5fb97610efe0cdb0e41
+W
+'src/Holiday/HolidayProgramFreeTime.java,4\d\4ddbbcfcce19a1f1999fc4c8d97c7bed447307f6
+Z
+*src/Holiday/HolidayProgramSightseeing.java,4\c\4cd09e14628f6c85eef942932846d7d57a8e1ab9
+P
+ src/Holiday/SelectedPackage.java,8\e\8e10792caaa4de7e4a9a6222a13e5cf10f1846a5
+^
+.src/Holiday/TransportToThePlaceOfHolidays.java,7\a\7a0fdc086765113f2d5ed16fb24e699ce5fd27b3
+c
+3src/Holiday/TransportToThePlaceOfHolidaysByCar.java,d\5\d512ee2f6786dafc15b7bc025e6089df7505e188
+e
+5src/Holiday/TransportToThePlaceOfHolidaysByPlane.java,9\c\9c3cdb5db9da1d459aee930d1721322d22f342f7
+h
+8src/Holiday/TransportToThePlaceOfHolidaysByPlaneBus.java,2\8\2848a246a3fb9c3341e4e2be0f59033d30e94c53
+]
+-src/Holiday/ApplicationPurchasedHolidays.java,d\1\d1471921880c3cc0a636b1f3334e81c5f1dec338
