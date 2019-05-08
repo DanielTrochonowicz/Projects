@@ -42,11 +42,9 @@ public class _03_Stars {
         StringBuilder builder1 = new StringBuilder();
         int stars = 10;
         for (int i = stars; i >= 0; i--) {
-            // append spaces
             for (int j = 0; j <= ((stars - 0) * 2) - (2 * i); j++) {
                 builder1.append(' ');
             }
-            // append stars
             for (int k = 0; k < (i * 2) + 1; k++) {
                 builder1.append('*').append(' ');
             }
@@ -54,7 +52,6 @@ public class _03_Stars {
         }
         System.out.println(builder1);
     }
-
 }
 
 /*
