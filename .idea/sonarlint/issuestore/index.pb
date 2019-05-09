@@ -51,8 +51,6 @@ V
 &src/IdentityCard/MainIdentityCard.java,9\2\9232931260eff2e0626e7c94d8633d8ee8b23d8a
 <
 Projects.iml,2\7\2783810cdaba805523472f33306bc6eae9d53b14
-G
-src/TicTacToe/Main.java,f\e\fe83c8b7220a84d3e526d6da0e5471d09080eba2
 X
 (src/ChocolateProducer/ChocolateMilk.java,5\a\5ace31b45e58863aaaef1eaa8f8fddcfffab6e0e
 _
@@ -223,3 +221,13 @@ h
 8src/Holiday/TransportToThePlaceOfHolidaysByPlaneBus.java,2\8\2848a246a3fb9c3341e4e2be0f59033d30e94c53
 ]
 -src/Holiday/ApplicationPurchasedHolidays.java,d\1\d1471921880c3cc0a636b1f3334e81c5f1dec338
+S
+#.idea/sonarlint/issuestore/index.pb,9\f\9fe84ebb15faf917b7def6236dba604453cc61e0
+Y
+)src/Task/_01_NumberMaxDivisionModulo.java,5\3\53fa40a959b47308152f7dfe15f753416d165b9d
+N
+src/Task/_02_WriteNumbers.java,2\5\25f05dadc912aff3ca4e3db714151942ffc24461
+G
+src/Task/_03_Stars.java,e\4\e460938ea5a7cbd9e198ae0ca319fb2575d11f1c
+W
+'src/TicTacToe/ApplicationTicTacToe.java,e\4\e43b6e960d90cba88087eda8ad368f5d2c5870c6

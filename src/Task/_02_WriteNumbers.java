@@ -70,13 +70,12 @@ public class _02_WriteNumbers {
 
 
 
-        //  Podaj wartość sumy wyrazów ciągu arytmetycznego.
         int first = 5;
-        int second = 2;
-        int end = 459;
-
-        for (int i = 0; first < end; i += 2, first = first + 2);{
-            System.out.println("Arithmetic string: " + first);
+        int suma = 0;
+        for (int i = 0; i < 459 ; i++) {
+            suma =+ first;
+            System.out.println(i + "Element ciągu: " + first + "Suma elementów: " + suma);
+            first += 2;
         }
     }
 }

@@ -5,13 +5,13 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class Main extends JFrame implements ActionListener {
+public class ApplicationTicTacToe extends JFrame implements ActionListener {
 
-    public Main(){
-        setSize(500,500); // wielkosc okna
-        setTitle("Kółko i Krzyżyk");  //ustawiamy tytuł
-        setVisible(true);       // widoczne okno
-        setDefaultCloseOperation(3); // mozemy zamknac aplikacje
+    public ApplicationTicTacToe(){
+        setSize(500,500);    // wielkosc okna
+        setTitle("Tic Tac Toe");         //ustawiamy tytuł
+        setVisible(true);               // widoczne okno
+        setDefaultCloseOperation(3);    // mozemy zamknac aplikacje
         setLayout(new GridLayout(3, 3)); //siatka 3/3
 
         for (int i = 0; i < 9 ; i++) {
@@ -22,7 +22,7 @@ public class Main extends JFrame implements ActionListener {
     }
 
     public static void main(String[] args) {
-        SwingUtilities.invokeLater(() -> new Main());
+        SwingUtilities.invokeLater(() -> new ApplicationTicTacToe());
     }
 
     private int counter;
