@@ -66,14 +66,39 @@ public class _04_CharCharAt {
         System.out.println("Totals 'a': " + totals);
 
 
+        System.out.println(" ");
 
-        String txt = "kajak";
-        for (int i = 0; i < txt.length() - 1; i++)
-            for (int j = 0; j < txt.length() - 1; j--) {
-                if (i != j) {
-                  //  System.out.println(System.out.println("nie jest ");
-                }
+        // Sprawdź, czy tekst jest palindromem (czy czytany od tyłu będzie taki sam).
+        String txt = "kajak";  //jest palindromem
+        //String txt = "Daniel"; // nie jest palindromem
+        int j = 0;
+        int k = (txt.length() - 1);
+        for (int i = 0; i < txt.length(); i++) {
+
+            if (txt.charAt(i) != txt.charAt(k)) {
+                k = 1;
+                break;
+            }
+            k--;
         }
+        if (j < k)
+            System.out.println("Is not a palindrome.");
+        else {
+            System.out.println("It is a palindrome.");
+        }
+
+        String texts = "aabbbccbb";
+        int total = 0;
+        for (int i = 0; i <= texts.length() - 1; i++) {
+            if (texts.charAt(i) == 'a')
+                total++;{
+//                if ( texts.charAt(i) == 'b');
+//                total++;
+            }
+        }
+        System.out.println("Totals1 : " + total);
+
+        System.out.println(" ");
 
         String first = "Daniel";
         String second = "Daniel";
@@ -86,6 +111,9 @@ public class _04_CharCharAt {
         System.out.println("compare: " + first2.equals(second2));
     }
 }
+
+
+
 
 /*
 char, charAt
@@ -103,5 +131,3 @@ char, charAt
 9. Zadeklaruj i przypisz wartości dwóm zmiennym tekstowym.
    Następnie sprawdź, czy pierwszy tekst zawiera drugi.
  */
-
-
