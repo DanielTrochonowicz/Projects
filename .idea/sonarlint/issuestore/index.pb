@@ -231,3 +231,9 @@ G
 src/Task/_03_Stars.java,e\4\e460938ea5a7cbd9e198ae0ca319fb2575d11f1c
 W
 'src/TicTacToe/ApplicationTicTacToe.java,e\4\e43b6e960d90cba88087eda8ad368f5d2c5870c6
+I
+src/Task/_05_Methods.java,4\2\42ee4ae78d02575658aee812154362d8cedffc83
+H
+src/Task/_06_Tables.java,0\3\03622e1e32f7d89df5ca26f69144bdbdb466c0f9
+L
+src/Task/_04_CharCharAt.java,4\1\4143388a283a6e262af54919a8a207bffdd65a9b

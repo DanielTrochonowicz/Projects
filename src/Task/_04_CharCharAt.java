@@ -89,16 +89,19 @@ public class _04_CharCharAt {
 
         String texts = "aabbbccbb";
         int total = 0;
+        int total1 = 0;
         for (int i = 0; i <= texts.length() - 1; i++) {
             if (texts.charAt(i) == 'a')
                 total++;{
-//                if ( texts.charAt(i) == 'b');
-//                total++;
+                if (texts.charAt(i) == 'b');
+                total1++;
             }
         }
         System.out.println("Totals1 : " + total);
+        System.out.println("Totals1 : " + total1);
 
         System.out.println(" ");
+
 
         String first = "Daniel";
         String second = "Daniel";
