@@ -34,13 +34,9 @@ public class _06_Tables {
         int[] w2 = getDistinct(tab5);
         String getDistinct = Arrays.toString(w2);
         System.out.println("Array after removing elements: " + getDistinct);
-
-
-
-
-
-
     }
+/*1. Napisz metodę print, która wypisze w konsoli elementy tablicy intów,
+przekazanej jako parametr.*/
 
     public static void print(int tab[]) {
 
@@ -48,6 +44,8 @@ public class _06_Tables {
             System.out.print(" " + tab[i]);
         }
     }
+/*2. Napisz metodę getMax, która przyjmie za parametr tablicę intów,
+a która zwróci największą wartość z tej tablicy.*/
 
     public static void getMax(int tab[]) {
         int max = tab[0];
@@ -57,6 +55,7 @@ public class _06_Tables {
         }
         System.out.println("Max: " + max);
     }
+/*3. Napisz metodę getMin, która zwróci najmniejszy element przekazanej tablicy intów.*/
 
     public static void getMin(int tab[]) {
         int min = tab[0];
@@ -66,6 +65,8 @@ public class _06_Tables {
         }
         System.out.println("Min: " + min);
     }
+/*4. Napisz metodę getSum, która przyjmie za parametr tablicę intów,
+a któa zwróci sumę jej elementów.*/
 
     public static void getSum(int tab[]) {
         int sum = 0;
@@ -74,6 +75,9 @@ public class _06_Tables {
         }
         System.out.println("Sum: " + sum);
     }
+/*5. Napisz metodę getMaxMinAndSum, która przyjmie za parametr tablicę intów,
+a która zwróci tablicę trzyelementową, której pierwszy element to wartość
+największa, drugi to najmniejsza,a trzeci suma wszystkich elementów.*/
 
     public static void getMaxMinAndSum(int tab[]) {
         int max1 = tab[0];
@@ -88,6 +92,8 @@ public class _06_Tables {
         }
         System.out.println("Max: " + max1 + " Min: " + min1 + " Sum: " + sum1);
     }
+/*6. Napisz metodę getLarger, która przyjmie za parametry dwie tablice intów,
+a która zwróci tę tablicę, której suma elementów jest większa.*/
 
     public static int[] getLager(int[] tab1, int[] tab2) {
         int max1 = 0;
@@ -102,6 +108,9 @@ public class _06_Tables {
         }
         return tab2;
     }
+/*7. Napisz metodę merge, która za parametry dwie tablice intów,
+a która zwróci tablicę, która zawierać będzie wszystkie
+elementy z jednej i drugiej tablicy.*/
 
     public static int[] merge(int[] tab1, int[] tab2) {
 
@@ -113,6 +122,10 @@ public class _06_Tables {
         int[] merge = ArrayUtils.addAll(tab1, tab2);
         return merge;
     }
+/*8. Napisz metodę getDistinct, która za parametr przyjmie tablicę,
+a która zwróci tablicę, w której będą elementy bez
+powtórzeń z tablicy przekazanej w parametrze.*/
+
     public static int[] getDistinct(int[] tab){
 
         System.out.println("The array created is :"+Arrays.toString(tab));
@@ -125,28 +138,5 @@ public class _06_Tables {
         }return tab;
     }
 }
-/*
-Tablice
-1. Napisz metodę print, która wypisze w konsoli elementy tablicy intów,
-   przekazanej jako parametr.
-2. Napisz metodę getMax, która przyjmie za parametr tablicę intów,
-   a która zwróci największą wartość z tej tablicy.
-3. Napisz metodę getMin, która zwróci najmniejszy element przekazanej tablicy intów.
-4. Napisz metodę getSum, która przyjmie za parametr tablicę intów,
-    a któa zwróci sumę jej elementów.
-5. Napisz metodę getMaxMinAndSum, która przyjmie za parametr tablicę intów,
-   a która zwróci tablicę trzyelementową, której
-   pierwszy element to wartość największa, drugi to najmniejsza,
-   a trzeci suma wszystkich elementów.
-6. Napisz metodę getLarger, która przyjmie za parametry dwie tablice intów,
-   a która zwróci tę tablicę, której suma elementów
-   jest większa.
-7. Napisz metodę merge, która za parametry dwie tablice intów,
-   a która zwróci tablicę, która zawierać będzie wszystkie
-   elementy z jednej i drugiej tablicy.
-8. Napisz metodę getDistinct, która za parametr przyjmie tablicę,
-   a która zwróci tablicę, w której będą elementy bez
-   powtórzeń z tablicy przekazanej w parametrze.
- */
 
 
