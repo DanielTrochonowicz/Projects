@@ -7,7 +7,6 @@ public class AccountBank {
         Account saving = new Account();
 
         saving.withdraw(45);
-
         System.out.println("Available funds on the account: " + saving.getBalance());
 
     }
