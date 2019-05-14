@@ -237,3 +237,9 @@ H
 src/Task/_06_Tables.java,0\3\03622e1e32f7d89df5ca26f69144bdbdb466c0f9
 L
 src/Task/_04_CharCharAt.java,4\1\4143388a283a6e262af54919a8a207bffdd65a9b
+J
+.idea/dictionaries/Dom.xml,d\f\df60134838e745d498dfad628dcbd73768740fda
+S
+#.idea/libraries/commons_lang3_3.xml,b\4\b4658c497309adf9405efdaf805ef27290e6b1ca
+O
+src/Task/_07_ScannerSwitch.java,d\7\d7b9363a4f6967c07030c829f817d68472a95aaa

@@ -128,9 +128,10 @@ powtórzeń z tablicy przekazanej w parametrze.*/
 
     public static int[] getDistinct(int[] tab){
 
-        System.out.println("The array created is :"+Arrays.toString(tab));
-        for(int i=0; i<tab.length-1; i++) {
-            for (int j=i+1; j<tab.length; j++) {
+      //  System.out.println("The array created is :"+Arrays.toString(tab));
+
+        for(int i = 0; i < tab.length -1; i++) {
+            for (int j = i + 1; j < tab.length; j++) {
                 if(tab[i] == tab[j]) {
                     tab = ArrayUtils.remove(tab, j);
                 }
