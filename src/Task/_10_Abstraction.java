@@ -11,6 +11,10 @@ public abstract class _10_Abstraction {
         System.out.println("Area circle: " +circleA.getArea() + " " + "Perimeter: " + circleA.getPerimeter());
         SquareA squareA = new SquareA(5,5);
         System.out.println("Area square: " +squareA.getArea() + " " + "Perimeter: " + squareA.getPerimeter());
+        Roller roller = new Roller(1,5);
+        System.out.println("Roller surface area: " + roller.getSurfaceArea() + "\n" + "Volume: " + roller.getVolume());
+        Cube cube = new Cube(5);
+        System.out.println("Cube surface area: " + cube.getSurfaceArea() + "\n" + "Volume: " + cube.getVolume());
     }
 
     private String color;
@@ -18,8 +22,6 @@ public abstract class _10_Abstraction {
     abstract double getPerimeter();
 }
 class PerpendicularSolid extends _10_Abstraction{
-
-
     private double firstA;
     private double secondB;
     private double thirdC;
@@ -38,9 +40,6 @@ class PerpendicularSolid extends _10_Abstraction{
         return firstA * secondB * thirdC;
     }
 }
-//class Roller extends _10_Abstraction implements Solid{
-//
-//}
 class RectangleA extends _10_Abstraction {
     private double firstA;
     private double secondB;
@@ -76,9 +75,42 @@ class CircleA extends _10_Abstraction{
     }
 }
 class SquareA extends RectangleA{
-
     public SquareA(double firstA, double secondB) {
         super(firstA, secondB);
+    }
+}
+class Roller implements Solid {
+    private double radius;
+    private double height;
+
+    Roller(double radius, double height) {
+        this.radius = radius;
+        this.height = height;
+    }
+    @Override
+    public double getSurfaceArea() {
+        return 2 * Math.PI * 2 * radius + 2 * Math.PI * radius * height;
+    }
+    @Override
+    public double getVolume() {
+        return Math.PI * radius * 2 * height;
+    }
+}
+class Cube implements Solid {
+    private double firstA;
+
+    public Cube(double firstA) {
+        this.firstA = firstA;
+    }
+
+    @Override
+    public double getSurfaceArea() {
+        return 3 * firstA;
+    }
+
+    @Override
+    public double getVolume() {
+        return 6 * (firstA * 2);
     }
 }
 interface Solid{
