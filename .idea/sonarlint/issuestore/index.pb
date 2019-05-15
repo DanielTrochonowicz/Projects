@@ -243,3 +243,9 @@ S
 #.idea/libraries/commons_lang3_3.xml,b\4\b4658c497309adf9405efdaf805ef27290e6b1ca
 O
 src/Task/_07_ScannerSwitch.java,d\7\d7b9363a4f6967c07030c829f817d68472a95aaa
+R
+".idea/libraries/guava_27_1_jre.xml,1\4\14b2af7eaeddf9f6c1f914cca9218108eec077b0
+G
+src/Task/_08_Class.java,d\3\d35b4a6f69bac774e1bdc6396b705f042d9f86b4
+K
+src/Task/_09_ClassHome.java,f\d\fd1774efbdc50576e8fa7f1ce3c72077485d8380

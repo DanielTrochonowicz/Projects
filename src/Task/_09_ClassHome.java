@@ -68,3 +68,14 @@ class Party{
           return (host + attendees) / numberTotal;
     }
 }
+
+/*
+1. Stwórz klasę Person, która będzie miała pola: firstName,
+   lastName oraz age oraz konstruktor (ustawiający wartości wszystkich pól).
+2. Stwórz klasę Room, która będzie miała pola: area oraz height.
+3. Stwórz klasę House, która będzie miała pola: address (String),kitchen,bathroom oraz
+   tablicę pokojów (rooms). W przypadku pól oznaczających pomieszczenia skorzystajmy z klasy Room.
+4. Do klasy House dodaj metodę getArea, która zwróci pole powierzchni domu.
+5. Stwórz klasę Party, która będzie miała pola: host (gospodarz), attendees (uczestnicy).
+   Do klasy dodaj metodęn getAverageAge, która zwróci średni wiek uczestników.
+*/
