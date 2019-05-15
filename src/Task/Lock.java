@@ -6,30 +6,57 @@ public class Lock {
     public static void main(String[] args) {
 
 
+        GeneratorKodu zamekDoRoweru = new GeneratorKodu(1, 2, 3);
+//        int aktualna = zamekDoRoweru.aktualnaUstawionaKombinacjaZamka(1,2,3);
+//        boolean sprawdzam = zamekDoRoweru.equals(aktualna);
+//        int sprawdzam1 = zamekDoRoweru.sprawdzamCzyZamekJestOtwartyCzyNie(1,3,4);
+//        int przesun = zamekDoRoweru.przesunOJednaPozycjeWPrawo(3,5);
 
-        GeneratorKodu  zamekDoRoweru = new GeneratorKodu(1,2,3);
-        int aktualna = zamekDoRoweru.aktualnaUstawionaKombinacjaZamka();
-        System.out.println(aktualna);
 
-}
-class GeneratorKodu {
-    private final int pierwszaCyfra;
-    private final int drugaCyfra;
-    private final int trzeciaCyfra;
 
-    public GeneratorKodu(int pierwszaCyfra, int drugaCyfra, int trzeciaCyfra) {
-        this.pierwszaCyfra = pierwszaCyfra;
-        this.drugaCyfra = drugaCyfra;
-        this.trzeciaCyfra = trzeciaCyfra;
-    }
-    public void przesunOJednaPozycjeWPrawo(){
-    }
-    }
-    public void sprawdzamCzyZamekJestOtwartyCzyNie(){
+
     }
 
-    public int aktualnaUstawionaKombinacjaZamka(){
-        return ;
+    static class GeneratorKodu implements PoprawnaKombinacja{
+        private final int pierwszaCyfra;
+        private final int drugaCyfra;
+        private final int trzeciaCyfra;
+
+        public GeneratorKodu(int pierwszaCyfra, int drugaCyfra, int trzeciaCyfra) {
+            this.pierwszaCyfra = pierwszaCyfra;
+            this.drugaCyfra = drugaCyfra;
+            this.trzeciaCyfra = trzeciaCyfra;
+        }
+
+        public int aktualnaUstawionaKombinacjaZamka(int pierwszaCyfra, int drugaCyfra, int trzeciaCyfra) {
+
+            return aktualnaUstawionaKombinacjaZamka(pierwszaCyfra, drugaCyfra, trzeciaCyfra);
+        }
+        public int przesunOJednaPozycjeWPrawo(int a, int b) {
+
+            return a >> b;
+        }
+
+        public int sprawdzamCzyZamekJestOtwartyCzyNie(int pierwszaCyfra, int drugaCyfra, int trzeciaCyfra) {
+
+            return sprawdzamCzyZamekJestOtwartyCzyNie(pierwszaCyfra, drugaCyfra, trzeciaCyfra);
+        }
+
+        @Override
+        public void AktualnaKombinacjaZamka() {
+            System.out.println(aktualnaUstawionaKombinacjaZamka(pierwszaCyfra,drugaCyfra,trzeciaCyfra));
+        }
+
+        @Override
+        public void PrzesunWybranaPrzekładnie() {
+
+            System.out.println(przesunOJednaPozycjeWPrawo(pierwszaCyfra,drugaCyfra));
+        }
+
+        @Override
+        public void Otwarty() {
+            System.out.println(sprawdzamCzyZamekJestOtwartyCzyNie(pierwszaCyfra,drugaCyfra,trzeciaCyfra));
+        }
     }
 }
 interface PoprawnaKombinacja {
