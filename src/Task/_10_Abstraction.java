@@ -38,9 +38,9 @@ class PerpendicularSolid extends _10_Abstraction{
         return firstA * secondB * thirdC;
     }
 }
-class Roller extends _10_Abstraction implements Solid{
-
-}
+//class Roller extends _10_Abstraction implements Solid{
+//
+//}
 class RectangleA extends _10_Abstraction {
     private double firstA;
     private double secondB;
