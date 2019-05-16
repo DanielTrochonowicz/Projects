@@ -117,3 +117,20 @@ interface Solid{
     double getSurfaceArea();
     double getVolume();
 }
+
+
+/*
+1. Stworzymy abstrakcyjną klasę Shape, która będzie miała pole:
+private String color;
+oraz metodę abstrakcyjną getArea(); (pole powierzchni)
+oraz metodę abstrakcyjną getPerimeter(); (obwód)
+
+2. Tworzymy klasę Rectangle o dwóch polach typu int (reprezentujące długości boków), która będzie rozszerzała klasę Shape
+3. Analogicznie tworzymy klasę Circle
+4. Tworzymy klasę Square, która będzie rozszerzała klasę Rectangle.
+5. Tworzymy interfejs Solid (Bryła) o metodach abstrakcyjnych getSurfaceArea oraz getVolume.
+6. Tworzymy klasy w taki sposób, aby uwzględnić bryły obrotowe: Walec
+7. graniastosłupy: Sześcian
+8. Stwórz klasę PerpendicularSolid, która będzie reprezentowała bryłę o dwóch równoległych, jednakowych podstawach,
+której ściany będą prostopadłe do podstaw. Użyj jako podstaw obiektu typu Shape.
+ */
