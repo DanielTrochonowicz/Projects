@@ -1,6 +1,7 @@
 package Task.Generic;
 
 public class Apple {
+
 }
 class AppleBox {
     private Apple apple;
