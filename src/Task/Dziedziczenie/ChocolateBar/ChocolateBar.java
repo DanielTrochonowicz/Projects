@@ -6,6 +6,8 @@ public abstract class ChocolateBar  {
     public static void main(String[] args) {
 
         CerealBar cerealBar = new CerealBar();
+
+
         String bar = cerealBar.bar("Mars");
         int price = cerealBar.price(5);
         int weight = cerealBar.weight(50);
@@ -15,11 +17,10 @@ public abstract class ChocolateBar  {
         System.out.println("Bar: " + bar);
         System.out.println("Price: " + price);
 
-        Mleko milk = new Mleko();
+        Mleko milk = new Mleko(2.0);
         milk.getPrice();
         milk.getWeight();
         double areaMilk  = milk.getArea(2.0);
-
         System.out.println("Price: " + milk.getPrice());
         System.out.println("Weight: " + milk.getWeight());
         System.out.println("Area milk: " + areaMilk);

@@ -10,6 +10,11 @@ public class _09_ClassHome {
         Person person2 = new Person("Darek", "Kowalski", "22 Age");
 
 
+        System.out.println(person0);
+        System.out.println(person1);
+        System.out.println(person2);
+
+
         Room room = new Room();
         double area = room.area;
         double height = room.height;
@@ -45,7 +50,17 @@ class Person {
         this.lastName = lastName;
         this.age = age;
     }
+
+    @Override
+    public String toString() {
+        return "Person: " +
+                " " + firstName +
+                " " + lastName +
+                " " + age;
+    }
 }
+
+
 class Room {
     public double area;
     public double height;

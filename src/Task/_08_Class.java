@@ -23,6 +23,8 @@ public class _08_Class {
         System.out.println("Triangle area2: " + triangle2.getArea() + "\n" + "Triangle perimeter2 " + triangle2.getPerimeter());
         System.out.println("Triangle area3: " + triangle3.getArea() + "\n" + "Triangle perimeter3: " + triangle3.getPerimeter());
 
+        triangle0.getArea();
+        triangle1.getPerimeter();
 
         Circle circle0 = new Circle(5);
         Circle circle1 = new Circle(14);
@@ -62,6 +64,7 @@ class Triangle{
     }
     public double getArea() {
         return (firstA * secondB) / 2;
+
     }
     public double getPerimeter() {
         return (firstA + secondB + thirdC);

@@ -23,4 +23,8 @@ public class CerealBar extends ChocolateBar implements Product{
     public int getWeight() {
         return 20;
     }
+    public CerealBar(){
+
+    }
+
 }

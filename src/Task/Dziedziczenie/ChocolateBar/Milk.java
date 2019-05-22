@@ -8,6 +8,10 @@ class Mleko implements Product{
 
     public double area;
 
+    public Mleko(double area) {
+        this.area = area;
+    }
+
     public double getArea(double area) {
         return area;
     }
