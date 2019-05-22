@@ -1,33 +1,45 @@
 package Task;
-import Task.Generic.Map;
+
+import java.util.Arrays;
+import java.util.HashMap;
 
 public class asdasa {
 
     public static void main(String[] args) {
-        Map<String, Integer> mapa = new Map<>();
+        Map1<String, Integer> mapa = new Map1<>();
 
-        mapa
+        mapa.put("Alicja",4);
+        mapa.put("Karolina",5);
+        mapa.put("Daniel",3);
+        mapa.put("Dawid",2);
+        mapa.put("Emilka",1);
+        mapa.put("Marzena",5);
+        mapa.put("Kamil",7);
+        mapa.put("Daniel",11);
+        mapa.put("Daniel",14);
+        mapa.put("Daniel",15);
+        mapa.put("Daniel",20);
+
+
+
+     //   mapa.remove("Daniel");
+        System.out.println(mapa.get("Dawid"));
+        System.out.println(mapa.remove("Daniel"));
+        System.out.println(mapa);
 
     }
 }
 
-class Slowniki{
+class Map1<K, T>{
+    private HashMap<K,T> mapa = new HashMap<>();
 
-    public String wartosc;
-    public int klucz;
-
-    public void put(String wartosc, int klucz){
-        this.wartosc = wartosc;
-        this.klucz = klucz;
+    public void put (K key, T value){
+        this.mapa.put(key,value);
     }
-    public String get(int klucz){
-
-        return wartosc;
+    public T get(K key){
+        return this.mapa.get(key);
     }
-    public int remove(){
-
-        int klucz;
-
-        return remove();
+    public T remove(K key){
+        return this.mapa.remove(key);
     }
 }
