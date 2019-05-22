@@ -16,23 +16,30 @@ public class _11_TypyGeneryczneMap {
         mapa.put("Grzegorz",7);
         mapa.put("Halina",8);
 
+
         System.out.println(mapa);
         System.out.println(mapa.remove("Bartosz"));
+        System.out.println(mapa);
+        System.out.println(mapa.get("Emilka"));
         System.out.println(mapa);
     }
 }
 class Map<K, T>{
     private HashMap<K,T> mapa = new HashMap<>();
 
+
     public void put (K key, T value){
         this.mapa.put(key,value);
     }
+
     public T get(K key){
         return this.mapa.get(key);
     }
+
     public T remove(K key){
         return  this.mapa.remove(key);
     }
+
     @Override
     public String toString() {
         return "Map: " +
