@@ -25,6 +25,7 @@ public class _11_TypyGeneryczneMap {
     }
 }
 class Map<K, T>{
+
     private HashMap<K,T> mapa = new HashMap<>();
 
 

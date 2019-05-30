@@ -249,3 +249,7 @@ G
 src/Task/_08_Class.java,d\3\d35b4a6f69bac774e1bdc6396b705f042d9f86b4
 K
 src/Task/_09_ClassHome.java,f\d\fd1774efbdc50576e8fa7f1ce3c72077485d8380
+K
+src/Task/Generic/Main1.java,0\6\064bebd366b25a5c02f99648939f044d8bc2ba2c
+S
+#src/Task/_11_TypyGeneryczneMap.java,3\9\394fcbbdd35e61e0f43f9b8be64e857881935a31
