@@ -1,11 +1,10 @@
 package Task;
-
 import java.util.ArrayList;
-import java.util.Collections;
+import java.util.HashSet;
 import java.util.List;
 
-public class _13_Kolekcje {
 
+public class _13_Kolekcje {
 
     public static void main(String[] args) {
 
@@ -19,23 +18,30 @@ public class _13_Kolekcje {
         task2(integers);
         task3(integers);
 
-
-
-
-
         List<String> strings = new ArrayList<>();
         strings.add("idziemy");
-        strings.add("abacdefg");
-        strings.add("koniecgry");
-        strings.add("robimy");
+        strings.add("abcdefg");
         strings.add("abdcc");
         strings.add("abc");
+        strings.add("idziemy");
+        strings.add("abcdefg");
+        strings.add("abdcc");
 
         System.out.println(task4(strings));
+        task5(strings);
+
+        java.util.Set<String> sets = new HashSet<>();
+        sets.add("hello");
+        sets.add("asdcde");
+        sets.add("cdeasda");
+        sets.add("gole");
+
+        System.out.println(task6(sets));
 
 
     }
     public static void task1(List<Integer> numberSize) {
+
         for (int i = 0; i < numberSize.size(); i++) {
         }
         System.out.println("Zawartosc Listy: " + numberSize);
@@ -62,6 +68,22 @@ public class _13_Kolekcje {
             if (start.startsWith("abc"))
                 return true;
         }return false;
+    }
+    public static void task5(List<String> numberString) {
+        for (int i = 0; i < numberString.size(); i++) {
+            if (numberString.size() % 2  == 0) {
+
+            }System.out.println("Even numbers: " + i);
+        }
+    }
+
+    public static boolean task6(java.util.Set<String> numberString) {
+
+        for (String start : numberString) {
+            if (start.endsWith("cde"))
+                return true;
+        }
+        return false;
     }
 }
 
