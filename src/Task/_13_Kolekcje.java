@@ -57,10 +57,13 @@ public class _13_Kolekcje {
 
         System.out.println(task8(convertSetToList));
 
-        Converter<String> converter = new Converter<>();
-        System.out.println(converter.toList(convertSetToList));
-        System.out.println(converter.toSet(convertListToSet));
 
+//        Converter<String> converter = new Converter<>();
+//        System.out.println(converter.toList(convertSetToList));
+//        System.out.println(converter.toSet(convertListToSet));
+
+        System.out.println(Converter.toList(convertSetToList));
+        System.out.println(Converter.toSet(convertListToSet));
 
     }
     public static void task1(List<Integer> numberSize) {
@@ -137,14 +140,14 @@ class Converter<T>{
     private  ArrayList<T> list = new ArrayList<>();
     private  HashSet<T> set = new HashSet<>();
 
-    public List<T> toList(Set<T> setToList) {
+    public static<T> List<T> toList(Set<T> setToList) {
         List<T> listSet = new ArrayList<>();
         for (T convert : setToList) {
             listSet.add(convert);
         }
         return  listSet;
     }
-    public Set<T> toSet(List<T> listToSet){
+    public static<T> Set<T> toSet(List<T> listToSet){
         Set<T> setList = new HashSet<>();
         for (T convert : listToSet){
             setList.add(convert);
