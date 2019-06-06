@@ -57,10 +57,10 @@ public class _13_Kolekcje {
 
         System.out.println(task8(convertSetToList));
 
-        Converter<List, Set> converter = new Converter<>(convertListToSet,convertSetToList);
+        Converter<String> converter = new Converter<>();
         System.out.println(converter.toList(convertSetToList));
         System.out.println(converter.toSet(convertListToSet));
-        System.out.println(converter);
+
 
     }
     public static void task1(List<Integer> numberSize) {
@@ -133,35 +133,23 @@ public class _13_Kolekcje {
         return collection;
     }
 }
-class Converter<L, S>{
-    private final  L  list;
-    private final  S  set;
+class Converter<T>{
+    private  ArrayList<T> list = new ArrayList<>();
+    private  HashSet<T> set = new HashSet<>();
 
-    public  Converter(L list, S set) {
-        this.list = list;
-        this.set = set;
-    }
-    public L toList(Set<String> setToList) {
-
-        List<String> listSet = new ArrayList<>();
-        for (String convert : setToList) {
+    public List<T> toList(Set<T> setToList) {
+        List<T> listSet = new ArrayList<>();
+        for (T convert : setToList) {
             listSet.add(convert);
         }
-        return (L) listSet;
+        return  listSet;
     }
-    public S toSet(List<String> listToSet){
-
-        Set<String> setList = new HashSet<>();
-        for (String convert : listToSet){
+    public Set<T> toSet(List<T> listToSet){
+        Set<T> setList = new HashSet<>();
+        for (T convert : listToSet){
             setList.add(convert);
         }
-        return (S) setList;
-    }
-    @Override
-    public String toString() {
-        return "Converter: " + "\n" +
-                "list: " + list + "\n" +
-                "Set: " + set ;
+        return setList;
     }
 }
 
