@@ -138,6 +138,8 @@ powtórzeń z tablicy przekazanej w parametrze.*/
             }
         }return tab;
     }
+
+
 }
 
 

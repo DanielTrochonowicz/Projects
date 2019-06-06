@@ -12,6 +12,7 @@ public class Bicycle extends Vehicle {
         this.numberOfgears = numberOfgears;
         this.wheelCount = wheelCount;
     }
+
     @Override
     public String toString() {
         return "Bicycle: " +

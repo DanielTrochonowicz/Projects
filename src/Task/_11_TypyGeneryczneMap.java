@@ -24,20 +24,20 @@ public class _11_TypyGeneryczneMap {
         System.out.println(mapa);
     }
 }
-class Map<K, T>{
+class Map<K, V>{
 
-    private HashMap<K,T> mapa = new HashMap<>();
+    private HashMap<K,V> mapa = new HashMap<>();
 
 
-    public void put (K key, T value){
+    public void put (K key, V value){
         this.mapa.put(key,value);
     }
 
-    public T get(K key){
+    public V get(K key){
         return this.mapa.get(key);
     }
 
-    public T remove(K key){
+    public V remove(K key){
         return  this.mapa.remove(key);
     }
 

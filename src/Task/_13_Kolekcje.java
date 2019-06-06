@@ -1,12 +1,14 @@
 package Task;
-import java.util.ArrayList;
-import java.util.HashSet;
+
+import java.util.*;
+import java.util.Set;
 import java.util.List;
 
 
 public class _13_Kolekcje {
 
     public static void main(String[] args) {
+
 
         List<Integer> integers = new ArrayList<>();
         integers.add(14);
@@ -30,7 +32,7 @@ public class _13_Kolekcje {
         System.out.println(task4(strings));
         task5(strings);
 
-        java.util.Set<String> sets = new HashSet<>();
+        Set<String> sets = new HashSet<>();
         sets.add("hello");
         sets.add("asdcde");
         sets.add("cdeasda");
@@ -38,6 +40,27 @@ public class _13_Kolekcje {
 
         System.out.println(task6(sets));
 
+        List<String> convertListToSet = new ArrayList<>();
+        convertListToSet.add("polek1");
+        convertListToSet.add("polek45");
+        convertListToSet.add("polek2");
+        convertListToSet.add("polek8");
+        convertListToSet.add("polek45");
+
+        System.out.println(task7(convertListToSet));
+
+        Set<String> convertSetToList = new HashSet<>();
+        convertSetToList.add("kiwi1");
+        convertSetToList.add("kiwi6");
+        convertSetToList.add("kiwi7");
+        convertSetToList.add("kiwi7");
+
+        System.out.println(task8(convertSetToList));
+
+        Converter<List, Set> converter = new Converter<>(convertListToSet,convertSetToList);
+        System.out.println(converter.toList(convertSetToList));
+        System.out.println(converter.toSet(convertListToSet));
+        System.out.println(converter);
 
     }
     public static void task1(List<Integer> numberSize) {
@@ -76,14 +99,69 @@ public class _13_Kolekcje {
             }System.out.println("Even numbers: " + i);
         }
     }
-
-    public static boolean task6(java.util.Set<String> numberString) {
+    public static boolean task6(Set<String> numberString) {
 
         for (String start : numberString) {
             if (start.endsWith("cde"))
                 return true;
         }
         return false;
+    }
+    public static Set<String> task7(List<String> listToSet) {
+
+        Set<String> setList = new HashSet<>();
+        for (String convert : listToSet){
+            setList.add(convert);
+        }return setList;
+    }
+    public static Set<String> listToSet(){
+        Set<String> collection = new HashSet<>();
+        collection.addAll(collection);
+        return collection;
+    }
+
+    public static List<String> task8(Set<String> setToList) {
+
+        List<String> listSet = new ArrayList<>();
+        for (String convert : setToList){
+            listSet.add(convert);
+        }return listSet;
+    }
+    public static List<String> setToList(){
+        List<String> collection = new ArrayList<>();
+        collection.addAll(collection);
+        return collection;
+    }
+}
+class Converter<L, S>{
+    private final  L  list;
+    private final  S  set;
+
+    public  Converter(L list, S set) {
+        this.list = list;
+        this.set = set;
+    }
+    public L toList(Set<String> setToList) {
+
+        List<String> listSet = new ArrayList<>();
+        for (String convert : setToList) {
+            listSet.add(convert);
+        }
+        return (L) listSet;
+    }
+    public S toSet(List<String> listToSet){
+
+        Set<String> setList = new HashSet<>();
+        for (String convert : listToSet){
+            setList.add(convert);
+        }
+        return (S) setList;
+    }
+    @Override
+    public String toString() {
+        return "Converter: " + "\n" +
+                "list: " + list + "\n" +
+                "Set: " + set ;
     }
 }
 

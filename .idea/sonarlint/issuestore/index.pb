@@ -253,3 +253,7 @@ K
 src/Task/Generic/Main1.java,0\6\064bebd366b25a5c02f99648939f044d8bc2ba2c
 S
 #src/Task/_11_TypyGeneryczneMap.java,3\9\394fcbbdd35e61e0f43f9b8be64e857881935a31
+S
+#src/Task/_12_TypyGeneryczneSet.java,9\1\91e663c731dc4f625d500d9bf151beb289267728
+J
+src/Task/_13_Kolekcje.java,1\2\1270b38c6649f38ae7b2e861dda527697c0616f0
