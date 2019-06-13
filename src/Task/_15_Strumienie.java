@@ -9,7 +9,7 @@ public class _15_Strumienie {
     public static void main(String[] args) {
 
         List<String> stringList = Arrays.asList("abc", "abcdefg",
-                "def", "idziemy", "abcdefg", "asdsa");
+                "def", "idziemy", "abcdefg", "asdsa", "AdamekA");
 
         task1(stringList);
         System.out.println(task2(stringList));
