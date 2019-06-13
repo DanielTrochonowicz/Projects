@@ -1,8 +1,8 @@
 package Task;
 
 import java.util.Arrays;
+import java.util.Comparator;
 import java.util.List;
-import java.util.stream.Collectors;
 
 
 public class _16_Person {
@@ -20,7 +20,6 @@ public class _16_Person {
                 new _16_Person("Marta", "Zawisz", 24, 210, "Uczen"),
                 new _16_Person("Michał", "Stac", 14, 169, "Uczen"));
 
-
                  person.stream()
                          .filter(p -> p.age > 20 && p.height > 175)
                          .forEach(System.out::println);
@@ -34,7 +33,15 @@ public class _16_Person {
                  person.stream()
                          .filter(p -> p.height > 200)
                          .forEach(System.out::println);
-
+                 person.stream()
+                         .sorted(Comparator.comparing(_16_Person::getSurname))
+                         .forEach(System.out::println);
+                 person.stream()
+                         .sorted(Comparator.comparing(_16_Person::getName))
+                         .forEach(System.out::println);
+                 person.stream()
+                         .sorted(Comparator.comparing(_16_Person::getAge))
+                         .forEach(System.out::println);
     }
 
     private String name;
