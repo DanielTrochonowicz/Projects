@@ -3,6 +3,9 @@ package Task;
 import java.util.Arrays;
 import java.util.Comparator;
 import java.util.List;
+import java.util.Set;
+import java.util.stream.Collectors;
+import java.util.Map;
 
 
 public class _16_Person {
@@ -42,6 +45,15 @@ public class _16_Person {
                  person.stream()
                          .sorted(Comparator.comparing(_16_Person::getAge))
                          .forEach(System.out::println);
+
+        Map<String, Integer> conwert =
+                 person.stream().collect(Collectors.toMap(_16_Person::getName, _16_Person::getAge));
+        System.out.println(conwert);
+
+        Map<String, Integer> conwert1 =
+        person.stream().collect(Collectors.toMap(_16_Person::getSurname, _16_Person::getAge));
+        System.out.println(conwert1);
+
     }
 
     private String name;
