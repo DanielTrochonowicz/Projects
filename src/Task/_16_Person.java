@@ -4,6 +4,7 @@ import java.util.Arrays;
 import java.util.Comparator;
 import java.util.List;
 import java.util.Set;
+import java.util.function.Function;
 import java.util.stream.Collectors;
 import java.util.Map;
 
@@ -21,7 +22,7 @@ public class _16_Person {
                 new _16_Person("Ewelina", "Miczen", 25, 169, "Uczen"),
                 new _16_Person("Dawid", "Rutkows", 19, 182, "Uczen"),
                 new _16_Person("Marta", "Zawisz", 24, 210, "Uczen"),
-                new _16_Person("Michał", "Stac", 14, 169, "Uczen"));
+                new _16_Person("Michał", "wkol", 14, 139, "Uczen"));
 
                  person.stream()
                          .filter(p -> p.age > 20 && p.height > 175)
@@ -29,6 +30,7 @@ public class _16_Person {
                  person.stream()
                          .filter(p -> p.age < 18)
                          .map(p -> p.getName() + " " + p.getSurname())
+                         .collect(Collectors.toList())
                          .forEach(System.out::println);
                  person.stream()
                         .filter(p -> p.getSurname().equals("Kowalski"))
@@ -46,13 +48,17 @@ public class _16_Person {
                          .sorted(Comparator.comparing(_16_Person::getAge))
                          .forEach(System.out::println);
 
-        Map<String, Integer> conwert =
-                 person.stream().collect(Collectors.toMap(_16_Person::getName, _16_Person::getAge));
-        System.out.println(conwert);
+        Map<String, Integer> conwert = person.stream()
+                .collect(Collectors.toMap(_16_Person::getName, _16_Person::getAge));
+                System.out.println(conwert);
 
-        Map<String, Integer> conwert1 =
-        person.stream().collect(Collectors.toMap(_16_Person::getSurname, _16_Person::getAge));
-        System.out.println(conwert1);
+        Map<String, Integer> conwert1 = person.stream()
+                .collect(Collectors.toMap(_16_Person::getSurname, _16_Person::getAge));
+                 System.out.println(conwert1);
+
+        Map<String, _16_Person> conwert3 = person.stream()
+                .collect(Collectors.toMap(_16_Person::getName, Function.identity()));
+                System.out.println(conwert3);
 
     }
 
