@@ -257,3 +257,13 @@ S
 #src/Task/_12_TypyGeneryczneSet.java,9\1\91e663c731dc4f625d500d9bf151beb289267728
 J
 src/Task/_13_Kolekcje.java,1\2\1270b38c6649f38ae7b2e861dda527697c0616f0
+M
+src/Task/_10_Abstraction.java,1\5\153928b163b18a593d601b833fb1648a3786a8c7
+L
+src/Task/_15_Strumienie.java,6\9\69e34a75b1b30b072a3b5e6a6765424157dbb022
+H
+src/Task/_16_Person.java,4\6\46a9b55e735628f45437dbb4230e266424f76d37
+J
+src/Task/_17_Optional.java,8\e\8efab39a2369b970a2bb4b32ee2add7716601160
+F
+src/Task/_14_Mapy.java,5\3\53ceece51cbbe814f743f1029d311ff2d678e7d0
