@@ -1,4 +1,4 @@
-package IteratorPattern;
+package Iterator;
 import java.util.*;
 import java.util.List;
 
@@ -70,3 +70,4 @@ public class Iteracja {
         }
     }
 }
+
