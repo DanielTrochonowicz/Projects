@@ -1,4 +1,4 @@
-package tablice;
+package tabliceKolekcjeMapy;
 
 public class Tablice {
     public static void main(String[] args) {

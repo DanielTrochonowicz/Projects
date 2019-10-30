@@ -1,4 +1,4 @@
-package tablice;
+package tabliceKolekcjeMapy;
 
 import java.util.ArrayList;
 import java.util.List;

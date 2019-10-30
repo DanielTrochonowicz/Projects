@@ -1,4 +1,4 @@
-package tablice;
+package tabliceKolekcjeMapy;
 
 import java.util.HashMap;
 import java.util.Map;
