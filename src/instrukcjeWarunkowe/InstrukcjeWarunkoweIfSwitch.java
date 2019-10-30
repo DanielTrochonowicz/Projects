@@ -43,7 +43,36 @@ public class InstrukcjeWarunkoweIfSwitch {
                 break;
             default:
                 System.out.println("X nie ma żądanej wartości");
+                break;
         }
         System.out.println("Koniec.");
+
+
+        int x2 = 5;
+        switch (x2) {
+            case 4:
+                showNumber(x2);
+                break;
+            case 5:
+                showNumber(x2);
+                break;
+            case 6:
+                showNumber(x2);
+                break;
+            case 7:
+                showNumber(x2);
+                break;
+            case 8:
+                showNumber(x2);
+                break;
+            default:
+                System.out.println("X nie ma żądanej wartości");
+                break;
+        }
+        System.out.println("Koniec.");
+    }
+
+    public static void showNumber(int x){
+        System.out.println("X = " + x);
     }
 }
