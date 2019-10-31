@@ -37,23 +37,23 @@ public class Bankomat {
 
     public void bankWebStart () {
 
-        String id = " ";
-        String haslo = " ";
+        long id = 0;
+        long haslo = 0;
 
-        boolean autoryzacja = false;
+        boolean autoryzacja1 = false;
 
         System.out.println("===== WITAJ W BANKU =====\n");
         System.out.println("=====  Podaj id klienta i podaj Hasło =====\n");
         Scanner scanner1 = new Scanner(System.in);
         System.out.println("Id klienta: ");
-        id = scanner1.nextLine();
+        id = scanner1.nextLong();
         System.out.println("Hasło: ");
-        haslo = scanner1.nextLine();
+        haslo = scanner1.nextLong();
 
         System.out.println("Autoryzacja...\n");
 
-        autoryzacja = bankomatFacade.identyfikacjaWeb(" ", haslo);
-        if (autoryzacja) {
+        autoryzacja1 = bankomatFacade.identyfikacjaWeb(1234567890, haslo);
+        if (autoryzacja1) {
             bankomat.pokazMenuWeb();
         } else {
             System.out.println("Autoryzacja nie powidła się. Konto zostało zablokowane");

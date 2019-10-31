@@ -18,14 +18,14 @@ public class BankomatFacade implements BankomatFacadeInterface {
     }
 
     @Override
-    public boolean identyfikacjaWeb(String id, String haslo) {
+    public boolean identyfikacjaWeb(long id, long haslo) {
         boolean correctWeb = false;
         correctWeb = bankLogin.identyfikacjaWeb(id,  haslo);
         return correctWeb;
     }
 
     @Override
-    public boolean identyfikacjaKomorka(long nrTelefonu, int pin) {
+    public boolean identyfikacjaKomorka(long nrTelefonu, long pin) {
         boolean correctKom = false;
         correctKom = bankLogin.identyfikacjaKomorka(nrTelefonu, pin);
         return correctKom;
