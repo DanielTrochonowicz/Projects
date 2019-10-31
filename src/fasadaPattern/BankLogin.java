@@ -10,10 +10,20 @@ public class BankLogin {
         }
     }
 
-    public void identyfikacjaWeb(String id, String haslo){
+    public boolean identyfikacjaWeb(String id, String haslo){
 
+        if (id == "daniel" && haslo == "flatron") {
+            return true;
+        }else {
+            return false;
+        }
     }
-    public void identyfikacjaKomorka(){
 
+    public boolean identyfikacjaKomorka(long nrTelefonu, int pin){
+        if (nrTelefonu == 505444555 & pin == 1234){
+            return true;
+        }else {
+            return false;
+        }
     }
 }

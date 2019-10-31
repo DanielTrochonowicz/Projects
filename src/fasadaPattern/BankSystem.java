@@ -10,23 +10,37 @@ public class BankSystem {
         }
     }
 
+    public float sprawdzStanKontaWeb(long id){
+        if (id == 1234567890){
+            return 984.78f;
+        } else {
+            return 0.00f;
+        }
+    }
+
     public String wypłacGotowke(int kwota){
         return "Z Konta wypłacono: " + kwota + " PLN.";
+    }
+
+    public String wpłacGotowke(int kwota){
+        return "Na konto wpłacono: " + kwota + " PLN.";
     }
 
     public String aktywujKarte(long numerKarty){
         return "Karta " + numerKarty + " aktywna.";
     }
 
-    public void platnoscWeb(){
-        //platnosc przez web
+    public String platnoscWeb(String id){
+        return "Bank Web" + id + "Zalogowano.";
     }
 
-    public void platnoscInternetowa(){
+    public String platnoscInternetowa(long zKontaMojego, float kwota){
+        return "Z konta głównego: " + zKontaMojego + " Kwota płatnosci " + kwota;
         //platnosc karta przez internet
     }
 
-    public void wykonajPrzelew(long zKonta, long naKonto, float kwota){
+    public String wykonajPrzelew(long zKonta, long naKonto, float kwota){
+        return "Z konta" + zKonta + "Na konto " + naKonto + " Kwota przelana " + kwota;
         // przelej pieniądze
     }
 }
