@@ -37,8 +37,8 @@ public class Bankomat {
 
     public void bankWebStart () {
 
-        long id = 0;
-        long haslo = 0;
+        String id = "";
+        int haslo = 0;
 
         boolean autoryzacja1 = false;
 
@@ -46,13 +46,13 @@ public class Bankomat {
         System.out.println("=====  Podaj id klienta i podaj Hasło =====\n");
         Scanner scanner1 = new Scanner(System.in);
         System.out.println("Id klienta: ");
-        id = scanner1.nextLong();
+        id = scanner1.nextLine();
         System.out.println("Hasło: ");
-        haslo = scanner1.nextLong();
+        haslo = scanner1.nextInt();
 
         System.out.println("Autoryzacja...\n");
 
-        autoryzacja1 = bankomatFacade.identyfikacjaWeb(1234567890, haslo);
+        autoryzacja1 = bankomatFacade.identyfikacjaWeb("Daniel", haslo);
         if (autoryzacja1) {
             bankomat.pokazMenuWeb();
         } else {
@@ -96,7 +96,8 @@ public class Bankomat {
 
         System.out.println("===== MENU =====");
         System.out.println("1. Stan konta");
-        System.out.println("2. Wypłata gotówki");
+        System.out.println("2. Aktywuj Karte");
+        System.out.println("2. wypłac kase Karte");
         System.out.println("3. Wpłata gotówki");
         System.out.println("4. Koniec\n");
 
@@ -107,18 +108,15 @@ public class Bankomat {
 
         switch (wybor){
             case 1:
-                bankomat.pokazStanKonta(1234567890);
+                bankomat.pokazStanKontaWeb(1234567890);
                 break;
             case 2:
-                bankomat.wyplacGotowke(260);
-                break;
-            case 3:
-                bankomat.wplacGotowke(400);
-                break;
-            case 4:
-                bankomat.koniec();
+                bankomat.aktywujKarteWeb(1234567890);
                 break;
             case 5:
+                bankomat.koniec();
+                break;
+            case 6:
                 bankomat.pokazMenu();
         }
     }
@@ -142,5 +140,15 @@ public class Bankomat {
 
     public void koniec(){
         System.exit(0);
+    }
+
+    public void pokazStanKontaWeb(long nrKarty){
+        System.out.println(bankomatFacade.sprawdzStanKontaWeb(nrKarty));
+        bankomat.pokazMenuWeb();
+    }
+
+    public void  aktywujKarteWeb(long numerKarty){
+        System.out.println(bankomatFacade.aktywujKarte(numerKarty));
+        bankomat.pokazMenuWeb();
     }
 }

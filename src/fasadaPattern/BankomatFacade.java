@@ -18,14 +18,14 @@ public class BankomatFacade implements BankomatFacadeInterface {
     }
 
     @Override
-    public boolean identyfikacjaWeb(long id, long haslo) {
+    public boolean identyfikacjaWeb(String id, int haslo) {
         boolean correctWeb = false;
         correctWeb = bankLogin.identyfikacjaWeb(id,  haslo);
         return correctWeb;
     }
 
     @Override
-    public boolean identyfikacjaKomorka(long nrTelefonu, long pin) {
+    public boolean identyfikacjaKomorka(long nrTelefonu, int pin) {
         boolean correctKom = false;
         correctKom = bankLogin.identyfikacjaKomorka(nrTelefonu, pin);
         return correctKom;
@@ -39,9 +39,9 @@ public class BankomatFacade implements BankomatFacadeInterface {
     }
 
     @Override
-    public float sprawdzStanKontaWeb(long nrKarty) {
+    public float sprawdzStanKontaWeb(long id) {
         float stanKonta = 0.00f;
-        stanKonta = bankSystem.sprawdzStanKontaWeb(nrKarty);
+        stanKonta = bankSystem.sprawdzStanKontaWeb(id);
         return stanKonta;
     }
 
@@ -53,5 +53,10 @@ public class BankomatFacade implements BankomatFacadeInterface {
     @Override
     public String wplacGotowke(int kwota) {
         return bankSystem.wpłacGotowke(kwota);
+    }
+
+    @Override
+    public String aktywujKarte(long numerKarty) {
+        return bankSystem.aktywujKarte(numerKarty);
     }
 }

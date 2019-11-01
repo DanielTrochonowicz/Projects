@@ -27,7 +27,7 @@ public class BankSystem {
     }
 
     public String aktywujKarte(long numerKarty){
-        return "Karta " + numerKarty + " aktywna.";
+        return "Karta kredytowa o numerze : " + numerKarty + " aktywna.";
     }
 
     public String platnoscWeb(String id){
