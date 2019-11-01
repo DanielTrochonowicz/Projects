@@ -27,7 +27,7 @@ public class BankSystem {
     }
 
     public String aktywujKarte(long numerKarty){
-        return "Karta kredytowa o numerze : " + numerKarty + " aktywna.";
+        return "Karta kredytowa o numerze: " + numerKarty + " aktywna.";
     }
 
     public String platnoscWeb(String id){
@@ -35,12 +35,10 @@ public class BankSystem {
     }
 
     public String platnoscInternetowa(long zKontaMojego, float kwota){
-        return "Z konta głównego: " + zKontaMojego + " Kwota płatnosci " + kwota;
-        //platnosc karta przez internet
+        return "Płatnosc z konta głównego nr: " + zKontaMojego + "\n" + "Kwota płatnosci za przedmiot: " + kwota + " Pln.";
     }
 
     public String wykonajPrzelew(long zKonta, long naKonto, float kwota){
-        return "Z konta" + zKonta + "Na konto " + naKonto + " Kwota przelana " + kwota;
-        // przelej pieniądze
+        return "Przelew z konta nr: " + zKonta + "\n" + "Na konto nr: " + naKonto + "\n" + "Kwota przelana: " + kwota + " Pln." + "\n";
     }
 }

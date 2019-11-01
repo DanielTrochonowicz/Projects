@@ -13,4 +13,6 @@ public interface BankomatFacadeInterface {
     String wplacGotowke(int kwota);
 
     String aktywujKarte(long numerKarty);
+    String platnoscInternetowa(long zKontaMojego, float kwota);
+    String wykonajPrzelew(long zKonta, long naKonto, float kwota);
 }

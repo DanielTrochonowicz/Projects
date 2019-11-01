@@ -59,4 +59,14 @@ public class BankomatFacade implements BankomatFacadeInterface {
     public String aktywujKarte(long numerKarty) {
         return bankSystem.aktywujKarte(numerKarty);
     }
+
+    @Override
+    public String platnoscInternetowa(long zKontaMojego, float kwota) {
+        return bankSystem.platnoscInternetowa(zKontaMojego, kwota);
+    }
+
+    @Override
+    public String wykonajPrzelew(long zKonta, long naKonto, float kwota) {
+        return bankSystem.wykonajPrzelew(zKonta, naKonto, kwota);
+    }
 }

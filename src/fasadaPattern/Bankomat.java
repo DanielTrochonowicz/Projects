@@ -42,6 +42,7 @@ public class Bankomat {
 
         boolean autoryzacja1 = false;
 
+        System.out.println();
         System.out.println("===== WITAJ W BANKU =====\n");
         System.out.println("=====  Podaj id klienta i podaj Hasło =====\n");
         Scanner scanner1 = new Scanner(System.in);
@@ -96,10 +97,10 @@ public class Bankomat {
 
         System.out.println("===== MENU =====");
         System.out.println("1. Stan konta");
-        System.out.println("2. Aktywuj Karte");
-        System.out.println("2. wypłac kase Karte");
-        System.out.println("3. Wpłata gotówki");
-        System.out.println("4. Koniec\n");
+        System.out.println("2. Aktywuj karte");
+        System.out.println("3. Platnosc internetowa");
+        System.out.println("4. Wykonaj przelew");
+        System.out.println("5. Koniec\n");
 
         System.out.println("Wybierz: ");
 
@@ -113,6 +114,11 @@ public class Bankomat {
             case 2:
                 bankomat.aktywujKarteWeb(1234567890);
                 break;
+            case 3:
+                bankomat.platnoscInternetowa(999888777123213L, 450);
+                break;
+            case 4:
+                bankomat.wykonajPrzelew(999888777123213L, 456354234123213L,450);
             case 5:
                 bankomat.koniec();
                 break;
@@ -149,6 +155,16 @@ public class Bankomat {
 
     public void  aktywujKarteWeb(long numerKarty){
         System.out.println(bankomatFacade.aktywujKarte(numerKarty));
+        bankomat.pokazMenuWeb();
+    }
+
+    public void platnoscInternetowa(long zKontaMojego, float kwota){
+        System.out.println(bankomatFacade.platnoscInternetowa(zKontaMojego, kwota));
+        bankomat.pokazMenuWeb();
+    }
+
+    public void wykonajPrzelew(long zKonta, long naKonto, float kwota){
+        System.out.println(bankomatFacade.wykonajPrzelew(zKonta, naKonto, kwota));
         bankomat.pokazMenuWeb();
     }
 }
