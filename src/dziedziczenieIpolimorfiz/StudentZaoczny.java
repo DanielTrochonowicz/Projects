@@ -1,4 +1,4 @@
-package dziedziczenie;
+package dziedziczenieIpolimorfiz;
 
 public class StudentZaoczny extends Student{
 
