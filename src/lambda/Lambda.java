@@ -21,20 +21,20 @@ public class Lambda {
         System.out.println(dodajemy.oblicz(4,4));
         System.out.println(odejmujemy.oblicz(4,2));
         System.out.println(mnozenie.oblicz(2,4));
-
-        KalkulatorInterface k = new KalkulatorInterface() {
-            @Override
-            public int oblicz(int a, int b) {
-                return a + b;
-            }
-        };
-
-        KalkulatorInterface k2 = new KalkulatorInterface() {
-            @Override
-            public int oblicz(int a, int b) {
-                return a - b;
-            }
-        };
+//
+//        KalkulatorInterface k = new KalkulatorInterface() {
+//            @Override
+//            public int oblicz(int a, int b) {
+//                return a + b;
+//            }
+//        };
+//
+//        KalkulatorInterface k2 = new KalkulatorInterface() {
+//            @Override
+//            public int oblicz(int a, int b) {
+//                return a - b;
+//            }
+//        };
 
     }
 }
