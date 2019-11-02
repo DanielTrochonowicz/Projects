@@ -1,4 +1,4 @@
-package Obiektowe;
+package obiektowe;
 
 public class Telefon {
 

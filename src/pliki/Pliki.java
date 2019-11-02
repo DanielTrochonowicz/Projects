@@ -16,11 +16,18 @@ public class Pliki {
             fileWriter.write("Text 3\n");
             fileWriter.write("Text 4\n");
             fileWriter.write("Text 5\n");
-//            fileWriter.close(); zamykanie
-//            fileWriter.flush();  oproznianie
-        }finally {
-            fileWriter.close();
+            fileWriter.write("Text 6\n");
 
+//            fileWriter.close();   // zamykanie
+//            fileWriter.flush();   // oproznianie
+        }catch (IOException ex){
+            System.out.println("Problem z dostepem do pliku.");
+        }finally {
+            if (fileWriter == null){
+                System.out.println("Problem");
+            }else{
+                fileWriter.close();
+            }
         }
     }
 }
