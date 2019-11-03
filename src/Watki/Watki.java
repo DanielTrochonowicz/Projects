@@ -14,6 +14,8 @@ public class Watki {
         System.out.println("WĄTEK " + nw3.t.getName() + " " + nw3.t.isAlive());
         System.out.println("WĄTEK " + nw4.t.getName() + " " + nw4.t.isAlive());
 
+        // isAlive sprawdza czy watek działa i co sie z nim dzieje
+        // join();  pozwalamy watkowi zeby sie spokojnie zakonczył
         try {
             nw1.t.join();
             nw2.t.join();
