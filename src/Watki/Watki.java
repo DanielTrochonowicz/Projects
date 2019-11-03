@@ -4,20 +4,37 @@ public class Watki {
 
     public static void main(String[] args) {
 
-        new NowyWatek("Jeden");
-        new NowyWatek("Dwa");
-        new NowyWatek("Trzy");
-        new NowyWatek("Cztery");
+        NowyWatek nw1 = new NowyWatek("Jeden");
+        NowyWatek nw2 = new NowyWatek("Dwa");
+        NowyWatek nw3 = new NowyWatek("Trzy");
+        NowyWatek nw4 = new NowyWatek("Cztery");
+
+        System.out.println("WĄTEK " + nw1.t.getName() + " " + nw1.t.isAlive());
+        System.out.println("WĄTEK " + nw2.t.getName() + " " + nw2.t.isAlive());
+        System.out.println("WĄTEK " + nw3.t.getName() + " " + nw3.t.isAlive());
+        System.out.println("WĄTEK " + nw4.t.getName() + " " + nw4.t.isAlive());
 
         try {
-            System.out.println("Usypiam wątek głowny.");
-            Thread.sleep(9000);
-            System.out.println("Wznawiam wątek głowny");
+            nw1.t.join();
+            nw2.t.join();
+            nw3.t.join();
+            nw4.t.join();
+//            System.out.println("Usypiam wątek głowny.");
+//            Thread.sleep(9000);
+//            System.out.println("Wznawiam wątek głowny");
         } catch (InterruptedException e) {
             System.out.println("Przerwano wątek głowny");
         }
         System.out.println("Zakończono wykonywanie wątku głównego.");
+
+
+        System.out.println("WĄTEK " + nw1.t.getName() + " " + nw1.t.isAlive());
+        System.out.println("WĄTEK " + nw2.t.getName() + " " + nw2.t.isAlive());
+        System.out.println("WĄTEK " + nw3.t.getName() + " " + nw3.t.isAlive());
+        System.out.println("WĄTEK " + nw4.t.getName() + " " + nw4.t.isAlive());
     }
+
+
 }
 
 
