@@ -9,6 +9,6 @@ public class CzytnikTemperatury {
     }
 
     public void update(int temperatura){
-        System.out.println("Czytnik nr " + nrKolejny + " odczytał nową temperaturę: " + temperatura + " Stopni.");
+        System.out.println("Czytnik nr: " + nrKolejny + " odczytał nową temperaturę: " + temperatura + " Stopni.");
     }
 }
