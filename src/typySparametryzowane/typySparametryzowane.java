@@ -29,4 +29,5 @@ class TypGen<T>{
     public T getObj() {
         return obj;
     }
+
 }
