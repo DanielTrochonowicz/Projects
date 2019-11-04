@@ -4,6 +4,7 @@ public class Zewnetrzna {
 
     public int a = 1;
     private int b = 2;
+    private int x = 2;
 
     public static int c = 3;
     public static int d = 4;
@@ -13,6 +14,10 @@ public class Zewnetrzna {
         w.testZew();
 
         System.out.println(a);
+
+        System.out.println(Wewnetrzna2.d);
+        Wewnetrzna2 wewnetrzna2 = new Wewnetrzna2();
+        wewnetrzna2.tesNaZew();
     }
 
     class Wewnetrzna{
@@ -28,5 +33,23 @@ public class Zewnetrzna {
             System.out.println(Zewnetrzna.c);
             System.out.println(Zewnetrzna.d);
         }
+    }
+
+    static class Wewnetrzna2{
+
+        public int a = 1;
+        private int b = 2;
+
+        public static int c = 9;
+        private static int d = 4;
+
+        public void tesNaZew(){
+            Zewnetrzna zewnetrzna = new Zewnetrzna();
+            System.out.println(Wewnetrzna2.d);
+            System.out.println(zewnetrzna.x);
+            System.out.println(zewnetrzna.a);
+            System.out.println(Zewnetrzna.c);
+        }
+
     }
 }

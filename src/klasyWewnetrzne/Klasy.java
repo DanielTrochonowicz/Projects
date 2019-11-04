@@ -15,5 +15,8 @@ public class Klasy {
         Zewnetrzna.Wewnetrzna w2 = z.new Wewnetrzna();
         w2.testZew();
 
+        Zewnetrzna.Wewnetrzna2 wewnetrzna2 = new Zewnetrzna.Wewnetrzna2();
+        wewnetrzna2.tesNaZew();
+
     }
 }
