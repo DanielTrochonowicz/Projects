@@ -20,6 +20,8 @@ public class Zewnetrzna {
         wewnetrzna2.tesNaZew();
     }
 
+
+
     class Wewnetrzna{
 
         public int a = 100;
@@ -36,6 +38,11 @@ public class Zewnetrzna {
     }
 
     static class Wewnetrzna2{
+
+        public Wewnetrzna2(){}
+        public Wewnetrzna2(String s){}
+        public Wewnetrzna2(String s, int s2){}
+
 
         public int a = 1;
         private int b = 2;
