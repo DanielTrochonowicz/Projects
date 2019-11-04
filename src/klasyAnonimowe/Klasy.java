@@ -4,16 +4,21 @@ public class Klasy {
 
     public static void main(String[] args) {
 
-        MojInterfejs mojInterfejs = new MojInterfejs() {
+        MojInterfejs m1 = new MojInterfejs() {
 
-            int x = 10;
+            public int x = 10;
             @Override
-            public void wyswietlTeks(String string) {
-                System.out.println(string);
+            public void wyswietlTeks(String pStr) {
+                System.out.println(pStr);
+                System.out.println(x);
+            }
+            public void metoda2(){
+
             }
         };
 
-        mojInterfejs.wyswietlTeks("cześć");
+        m1.wyswietlTeks("cześć");
+        System.out.println(m1.liczba);
 
 
     }

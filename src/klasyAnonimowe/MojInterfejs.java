@@ -2,5 +2,7 @@ package klasyAnonimowe;
 
 public interface MojInterfejs {
 
-    public void wyswietlTeks(String string);
+    int liczba = 100;
+
+    void wyswietlTeks(String pStr);
 }
