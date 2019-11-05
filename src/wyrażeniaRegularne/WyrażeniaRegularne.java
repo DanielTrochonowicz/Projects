@@ -23,6 +23,10 @@ public class WyrażeniaRegularne {
         //  [a]{0,} = [a]* moze sie pojawic ale nie musi
         //  [a]? = [a]{0,1} = nie wiecej niz raz
 
+        Pattern pattern = Pattern.compile("^[0-9]{2,3}-[0-9]{3}$");
+        Matcher matcher = pattern.matcher("00-900");
+        System.out.println(matcher.matches());
+
         Pattern p = Pattern.compile("Java");
         Matcher m = p.matcher("Programowanie Java");
 
