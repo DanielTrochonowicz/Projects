@@ -17,6 +17,8 @@ public class Klient {
     //Start programu
     public static void main(String[] args) {
 
+        Klient k = new Klient();
+        k.startklienta();
 
     }
 
@@ -31,13 +33,14 @@ public class Klient {
 
             PrintWriter printWriter = new PrintWriter(socket.getOutputStream());
             bufferedReader = new BufferedReader(new InputStreamReader(socket.getInputStream()));
-
+            Thread t = new Thread(new Odbiorca());
+            t.start();
 
             while (true){
                 System.out.println(">> ");
                 String srt = scanner.nextLine();
                 if (srt.equalsIgnoreCase("q")){
-                    printWriter.println(imie + ": " + srt);
+                    printWriter.println(imie + ":" + srt);
                     printWriter.flush();
                 }else {
                     printWriter.println(imie + " rozłączył się");
@@ -51,4 +54,23 @@ public class Klient {
 
         }
     }
+    public class  Odbiorca implements Runnable{
+
+        @Override
+        public void run() {
+            String wiadomosc;
+            try {
+                while ((wiadomosc = bufferedReader.readLine()) != null){
+                    String substring[] = wiadomosc.split(":");
+                    if (!substring[0].equals(imie)){
+                        System.out.println(wiadomosc);
+                        System.out.println(">> ");
+                    }
+                }
+            }catch (Exception ex){
+                System.out.println("Połączenie zakończone.");
+            }
+        }
+    }
 }
+
