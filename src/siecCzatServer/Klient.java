@@ -1,6 +1,7 @@
 package siecCzatServer;
 
 import java.io.BufferedReader;
+import java.net.Socket;
 import java.util.Scanner;
 
 public class Klient {
@@ -23,7 +24,8 @@ public class Klient {
         System.out.print("Podaj imie: ");
         imie = scanner.nextLine();
         try {
-
+            Socket socket = new Socket(IP, PORT);
+            System.out.println("Podłączono do " + socket);
         }catch (Exception ex){
 
         }
