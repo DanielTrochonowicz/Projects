@@ -16,6 +16,8 @@ public class Server {
     //uruchomienie programu
     public static void main(String[] args) {
 
+        Server s = new Server();
+        s.startSerwer();
 
 
     }
@@ -32,6 +34,9 @@ public class Server {
                 System.out.println("Słucham: " + serverSocket);
                 printWriter = new PrintWriter(socket.getOutputStream());
                 klientArrayList.add(printWriter);
+
+                Thread t = new Thread(new SerwerKlient(socket));
+                t.start();
             }
         }catch (Exception ex){
             ex.printStackTrace();
@@ -49,7 +54,7 @@ public class Server {
             try{
                 System.out.println("Połączony");
                 socket = socketKlient;
-                bufferedReader = new BufferedReader(new InputStreamReader(socket.getInputStream()))
+                bufferedReader = new BufferedReader(new InputStreamReader(socket.getInputStream()));
             }catch (Exception ex){
                 ex.printStackTrace();
             }
@@ -61,13 +66,17 @@ public class Server {
 
             try {
                 while ((str = bufferedReader.readLine()) != null){
-                    System.out.println("Odebrano: ");
+                    System.out.println("Odebrano >> ");
 
                     Iterator it = klientArrayList.iterator();
 
+                    while (it.hasNext()){
+                        pw = (PrintWriter) it.next();
+                        pw.println(str);
+                        pw.flush();
+                    }
                 }
             }catch (Exception ex){
-
             }
         }
     }
