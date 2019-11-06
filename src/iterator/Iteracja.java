@@ -22,6 +22,7 @@ public class Iteracja {
         kolSet.add("str 2");
         kolSet.add("str 3");
         kolSet.add("str 4");
+//        kolSet.add("str 4");
 
         Map<Integer, String> mapa = new HashMap<>();
         mapa.put(1, "One");
