@@ -17,6 +17,7 @@ public class Iteracja {
         listaInt.add(300);
         listaInt.add(400);
 
+
         Set<String> kolSet = new HashSet<>();
         kolSet.add("str 1");
         kolSet.add("str 2");
