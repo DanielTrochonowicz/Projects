@@ -10,7 +10,9 @@ public class Main {
     public static void main(String[] args) {
 
         task();
+
     }
+
     public static Scanner scanner = new Scanner(System.in);
 
     private static int random() {
