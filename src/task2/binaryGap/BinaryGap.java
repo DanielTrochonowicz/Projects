@@ -1,7 +1,5 @@
 package task2.binaryGap;
 
-import task2.countDiv.Solution;
-
 import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
