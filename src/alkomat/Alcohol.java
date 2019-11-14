@@ -33,6 +33,7 @@ public class Alcohol {
     String calculatePerMil(int quantity, int weight, boolean male){
 
         //promile=ilosc wypitego alko/(wsp. 0,7 facet, 0.6 kobieta *masa)
+
         DecimalFormat decimalFormat = new DecimalFormat("#.##");
 
         float genderRatel;
