@@ -17,6 +17,8 @@ public class AbsDistinct {
         a[7] =  10;
         a[8] =  11;
 
+        int tab = absDistinct(a);
+        System.out.println(tab);
     }
 
     public static int absDistinct(int[] a) {
