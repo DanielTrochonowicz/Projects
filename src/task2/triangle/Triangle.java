@@ -4,6 +4,11 @@ import java.util.Arrays;
 
 public class Triangle {
 
+    public static void main(String[] args) {
+        Integer a = 0;
+        Integer b = -5;
+
+    }
     public int triangle(int[] a) {
         if (a.length <= 2) {
             return 0;
