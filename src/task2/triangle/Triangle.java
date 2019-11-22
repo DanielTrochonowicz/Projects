@@ -7,6 +7,7 @@ public class Triangle {
     public static void main(String[] args) {
         Integer a = 0;
         Integer b = -5;
+        System.out.println(a.compareTo(b));
 
     }
     public int triangle(int[] a) {
