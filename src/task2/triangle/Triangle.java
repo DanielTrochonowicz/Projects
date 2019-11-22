@@ -2,9 +2,11 @@ package task2.triangle;
 
 public class Triangle {
 
-    public static void main(String[] args) {
+
+    public int triangle(int[] a) {
+        if (a.length <= 2) {
+            return 0;
+        }
 
     }
-
-
 }
