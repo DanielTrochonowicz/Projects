@@ -1,4 +1,4 @@
-//package task;
+//package ArrayInversionCount;
 //
 //import org.apache.commons.lang2.ArrayUtils;
 //
