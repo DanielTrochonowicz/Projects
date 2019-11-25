@@ -1,5 +1,3 @@
-
-
 An array A consisting of N integers is given. An inversion is a pair of indexes (P, Q) such that P < Q and A[Q] < A[P].
 
 Write a function:
