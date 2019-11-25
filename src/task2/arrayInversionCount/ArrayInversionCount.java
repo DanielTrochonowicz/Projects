@@ -7,7 +7,6 @@ public class ArrayInversionCount {
     public int arrayInversionCount(int[] A) {
 
         int distinctElements = (int) Arrays.stream(A).distinct().count();
-
         if (A.length <= 1 || (A.length == 2 && A[0] >= A[1]) || distinctElements == 1)
             return 0;
 
@@ -25,5 +24,4 @@ public class ArrayInversionCount {
             return counter;
         return -1;
     }
-
 }
