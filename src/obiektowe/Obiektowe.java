@@ -36,7 +36,6 @@ public class Obiektowe {
 //        telefon1.wielkosc = 13;
 //        telefon1.cena = 900;
 
-
 //        System.out.println(telefon.marka);
 //        System.out.println(telefon.wielkosc);
 //
