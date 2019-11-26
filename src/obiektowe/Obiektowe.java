@@ -16,7 +16,6 @@ public class Obiektowe {
 //        telefon.marka = "Nokia";
 //        telefon.wielkosc = 10;
 //        telefon.cena = 500;
-//
 //        telefon.numberAdd();
 //        telefon.numberDelete();
 //        telefon.vloimeDown();
